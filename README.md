@@ -27,7 +27,7 @@
 - 修改了模型权重转换脚本为正确的层级格式；修复数据预处理、日志、保存检查点等逻辑，对沐曦中 Megatron-core 的核心功能未做修改
 
 
-## 安装
+## 🪶安装
 
 ### 英伟达
 
@@ -45,7 +45,7 @@
 
 使用镜像：cr.infini-ai.com/te-c7vnqlzlmvzffc2v/megatron-lm:maca2.27.0.7-py310
 
-在镜像中有一个沐曦自带的 /workspace/Pai-Megatron-Patch，其中有一个指向沐曦版 Megatron-LM 的软连接，<del>你会发现按沐曦的 readme 运行不起来</del>，忽略它们或把它们移动到别的地方；使用这个仓库的 [MetaX-maca2.27]Pai-Megatron-Patch 替换镜像中原本的 /workspace/Pai-Megatron-Patch 文件夹
+在镜像中有一个沐曦自带的 /workspace/Pai-Megatron-Patch，其中有一个指向沐曦版 Megatron-LM 的软连接，<del>你会发现按沐曦的 readme 运行不起来</del>，忽略它们或把它们移动到别的地方；使用这个仓库的 [MetaX]Pai-Megatron-Patch 替换镜像中原本的 /workspace/Pai-Megatron-Patch 文件夹
 
 最后需要确认 transformers >=4.47.0，否则无法保存模型为 safetensors
 
