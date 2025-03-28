@@ -96,15 +96,15 @@
     ├── ... 
     └── latest_checkpointed_iteration.txt 
 
-训练过程中的检查点会保存在 `SAVE_TORCH_CHECKPOINT_PATH` 下:
+训练过程中的检查点会保存在 `SAVE_DIST_CHECKPOINT_PATH`（Nvidia） / `SAVE_TORCH_CHECKPOINT_PATH`（沐曦）下:
 
-    SAVE_TORCH_CHECKPOINT_PATH  
+    SAVE_DIST_CHECKPOINT_PATH (SAVE_TORCH_CHECKPOINT_PATH)
     ├── iter_0000100  
     ├── iter_0000200  
     ├── ... 
     └── latest_checkpointed_iteration.txt 
 
-在**从上次暂停处继续训练**时，需要指定 `LOAD_CHECKPOINT_PATH` 与 `SAVE_TORCH_CHECKPOINT_PATH` 相同
+在**从上次暂停处继续训练**时，需要指定 `LOAD_CHECKPOINT_PATH` 与 `SAVE_DIST_CHECKPOINT_PATH`（Nvidia） / `SAVE_TORCH_CHECKPOINT_PATH`（沐曦）相同
 
 ## 4. 转换 Megatron 为 huggingface 格式
 
